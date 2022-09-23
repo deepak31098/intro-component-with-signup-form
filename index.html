@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS style -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+<div class="viewport">
+  <div class="main">
+    <div class="container-one">
+      <div class="heading-div">
+        <strong><span>Learn to code by watching others</span></strong>
+      </div>
+      <div class="info">
+        <span>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </span>
+      </div>
+    </div>
+    <div class="container-two">
+      <div class="">
+        <div class="trial-info-box">
+          <span><span class="trial-span-white">Try it free 7 days</span> then $20/mo. thereafter</span>
+        </div>
+      </div>
+      <div class="">
+        <form id="login-form" action="index.html" method="post">
+          <input class="form" name ="fName" type="text" value="" placeholder="First Name">
+          <div class="error-message invisible"><span>First Name caanot be empty</span> </div>
+          <input class="form" name ="lName" type="text" value=""  placeholder="Last Name ">
+          <div class="error-message invisible"><span>Last Name cannot be empty</span> </div>
+          <input class="form" name ="email" type="email" value="" placeholder="Email Address">
+          <div class="error-message invisible"><span>Looks like this is not an email</span> </div>
+          <input class="form" name ="password" type="password" value="" placeholder="Password">
+          <div class="error-message invisible"><span>Password cannot be empty</span> </div>
+          <button id="claim"class="claim-button" type="button" name="button">CLAIM YOUR FREE TRIAL</button>
+          <div class="terms-and-condition-div">
+            <span>By clicking the button, you are agreeing to our <span class="terms-and-condition">Terms and Services</span> </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
