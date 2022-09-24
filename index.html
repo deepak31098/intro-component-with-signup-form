@@ -24,22 +24,22 @@
       </div>
     </div>
     <div class="container-two">
-      <div class="">
+      <div>
         <div class="trial-info-box">
           <span><span class="trial-span-white">Try it free 7 days</span> then $20/mo. thereafter</span>
         </div>
       </div>
-      <div class="">
-        <form id="login-form" action="index.html" method="post">
-          <input class="form" name ="fName" type="text" value="" placeholder="First Name">
+      <div>
+        <form id="login-form" action="index.html" method="post" >
+          <input class="form" name ="fName" type="text"   placeholder="First Name" value="" required>
           <div class="error-message invisible"><span>First Name caanot be empty</span> </div>
-          <input class="form" name ="lName" type="text" value=""  placeholder="Last Name ">
+          <input class="form" name ="lName" type="text" value=""  placeholder="Last Name " required>
           <div class="error-message invisible"><span>Last Name cannot be empty</span> </div>
-          <input class="form" name ="email" type="email" value="" placeholder="Email Address">
+          <input class="form" name ="email" type="email" value="" placeholder="Email Address" required>
           <div class="error-message invisible"><span>Looks like this is not an email</span> </div>
-          <input class="form" name ="password" type="password" value="" placeholder="Password">
+          <input class="form" name ="password" type="password" value="" placeholder="Password" required>
           <div class="error-message invisible"><span>Password cannot be empty</span> </div>
-          <button id="claim"class="claim-button" type="button" name="button">CLAIM YOUR FREE TRIAL</button>
+          <button onclick="handleClick()" id="claim"class="claim-button"  type="button" name="button">CLAIM YOUR FREE TRIAL</button>
           <div class="terms-and-condition-div">
             <span>By clicking the button, you are agreeing to our <span class="terms-and-condition">Terms and Services</span> </span>
           </div>
