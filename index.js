@@ -28,17 +28,3 @@ function validation(){
     stylesChange(3);
   }
 }
-//height issue
-const setHeight = () => {
-  if(window.innerHeight<690 && window.innerWidth<700){
-    document.getElementsByClassName("viewport")[0].style.height = "100%"
-  }
-  else{
-    document.getElementsByClassName("viewport")[0].style.height = "100vh"
-  }
-};
-let deviceWidth = window.matchMedia("(max-width: 1024px)");//returns a boolean
-if (deviceWidth.matches) {
-    window.addEventListener("resize", setHeight);
-    setHeight();
-}

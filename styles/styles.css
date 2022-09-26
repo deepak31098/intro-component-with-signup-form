@@ -4,7 +4,7 @@ body{
 }
 
 .viewport{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: url("../images/bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
